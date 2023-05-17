@@ -1,0 +1,177 @@
+/*este código aplica un reinicio básico de estilos a todos los elementos 
+de la página, eliminando los márgenes y rellenos predeterminados y estableciendo 
+el modelo de caja "border-box" para unamejor gestión del diseño y el tamaño de los elementos.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}   
+/*boton contacto*/
+.boton{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu{
+    
+    display: flex;
+    justify-content: center;
+} 
+
+header {
+    height: 15vh;
+    /*es para que el nav se mantenga al bajar*/
+    /*position: fixed;*/
+    z-index: 3;
+    width: 100%;
+    
+}
+
+.navegacion {
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} 
+
+.navv{
+    display: flex;
+    align-items: flex-start;
+}
+/*
+.logo{
+    display: flex;
+    align-self: self-end;
+}
+*/
+/* elimina las viñetas o números de los elementos de la lista*/
+.navegacion .menu {
+    list-style: none;
+}  
+
+/*para que no salga en columna, lo vuelve fila*/
+/* .menu>li {
+    position: relative;
+    display: inline-block;
+}  */
+
+.menu>li>a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    font-family: Arial, Helvetica;
+    text-decoration: none;
+} 
+
+/* .menu li a:hover {
+    color: rgb(35, 96, 187);
+    transition: all .3s;
+}
+.navegacion img{
+    height: 50px;
+
+}  */
+/* .contenedortotal {
+    width: 100%;
+    max-width: 2000px;
+} */
+/* h3{ 
+    font-family: theSans;
+}
+@font-face {
+    font-family: theSans;
+    src: url(Letra//MerriweatherSans-Italic-VariableFont_wght.ttf);
+} */
+.c1, .c2, .c3{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 250px;
+    height:250px;
+    margin: 30px;
+    
+}
+.cajas{
+    display: flex;
+    justify-content: center
+}
+.c11, .c22, .c33, .c44{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 250px;
+    height:250px;
+    margin: 30px;
+}
+.c111, .c222, .c333, .c444, .c555{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: white;
+    color: black;
+    width: 600px;
+    height:50px;
+    margin: 30px;
+    
+}
+.cajass{
+    
+    
+
+    background-color: black;
+}
+
+
+.seccion4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura según sea necesario */
+}
+
+.cajass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  /* Estilos de las cajas */
+.cajass > div {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.boton2{
+    background-color: white;
+    color: black;
+}
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta la altura según sea necesario */
+    text-align: center;
+}
+h2, h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Ajusta la altura según sea necesario */
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+} 
