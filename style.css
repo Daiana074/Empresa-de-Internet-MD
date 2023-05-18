@@ -7,18 +7,16 @@ el modelo de caja "border-box" para unamejor gestión del diseño y el tamaño d
     box-sizing: border-box;
     
 }   
+
+
 /*boton contacto*/
 .boton{
-    background-color: black;
+    background-color: #019df4;
     color: white;
-    padding: 10px 20px;
+    padding: 7%;
+    margin: 16%;
 }
 
-.menu{
-    
-    display: flex;
-    justify-content: center;
-} 
 
 header {
     height: 15vh;
@@ -27,31 +25,44 @@ header {
     z-index: 3;
     width: 100%;
     
+    
 }
-
+ 
 .navegacion {
     width: 100%;
-    margin: 30px auto;
+    padding: 1%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+       
+}  
+
+/* .logo{
+    display: flex;
+    align-self: flex-start; 
     
+    
+} */
+.menu{
+    list-style: none;
+    display: flex;
+    
+    
+}
+.menu>li>a {
+    display: block;
+    padding: 15px; 
+    color: black;
+    font-family: Arial, Helvetica;
+    text-decoration: none;
 } 
 
-.navv{
-    display: flex;
-    align-items: flex-start;
+.menu li a:hover {
+    color: rgb(35, 96, 187);
+    transition: all .3s;
 }
-/*
-.logo{
-    display: flex;
-    align-self: self-end;
-}
-*/
+
 /* elimina las viñetas o números de los elementos de la lista*/
-.navegacion .menu {
-    list-style: none;
-}  
+
 
 /*para que no salga en columna, lo vuelve fila*/
 /* .menu>li {
@@ -59,26 +70,6 @@ header {
     display: inline-block;
 }  */
 
-.menu>li>a {
-    display: block;
-    padding: 15px 20px;
-    color: black;
-    font-family: Arial, Helvetica;
-    text-decoration: none;
-} 
-
-/* .menu li a:hover {
-    color: rgb(35, 96, 187);
-    transition: all .3s;
-}
-.navegacion img{
-    height: 50px;
-
-}  */
-/* .contenedortotal {
-    width: 100%;
-    max-width: 2000px;
-} */
 /* h3{ 
     font-family: theSans;
 }
@@ -90,23 +81,48 @@ header {
     border: 1px solid rgb(70, 69, 69);
     background-color: white;
     color: black;
-    width: 250px;
-    height:250px;
-    margin: 30px;
+    width: 400px;
+    height: 250px;
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    
+    
+}
+.boton3{
+    background-color: #019df4;
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin: 2%;
     
 }
 .cajas{
     display: flex;
     justify-content: center
 }
+.icono{
+    padding: 8%;
+    
+}
+
+
+
+
+
 .c11, .c22, .c33, .c44{
     border: 1px solid rgb(70, 69, 69);
     background-color: white;
     color: black;
-    width: 250px;
-    height:250px;
+    width: 300px;
+    height:100px;
     margin: 30px;
+    display: flex;
+    
 }
+
 .c111, .c222, .c333, .c444, .c555{
     border: 1px solid rgb(70, 69, 69);
     background-color: white;
@@ -114,14 +130,11 @@ header {
     width: 600px;
     height:50px;
     margin: 30px;
+    border-radius: 5%;
     
 }
-.cajass{
-    
-    
 
-    background-color: black;
-}
+
 
 
 .seccion4 {
@@ -131,23 +144,28 @@ header {
     height: 80vh; /* Ajusta la altura según sea necesario */
 }
 
+
 .cajass {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
   /* Estilos de las cajas */
+  
 .cajass > div {
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid black;
+    margin: 1px;
+    
+    
+   
 }
 .boton2{
     background-color: white;
     color: black;
+    
 }
-
+*/
 .seccion1 {
     display: flex;
     flex-direction: column;
@@ -166,8 +184,7 @@ h2, h3{
 }
 footer{
     width: 100%;
-    height: 10vh;
-    margin: 10px auto;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
