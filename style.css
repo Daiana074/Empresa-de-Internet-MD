@@ -7,46 +7,28 @@ el modelo de caja "border-box" para unamejor gestión del diseño y el tamaño d
     box-sizing: border-box;
     
 }   
-
-
-/*boton contacto*/
-.boton{
-    background-color: #019df4;
-    color: white;
-    padding: 7%;
-    margin: 16%;
-}
-
+@font-face {
+    font-family: Raleway;
+    src: url(./Letra/Raleway-VariableFont_wght.ttf);
+} 
 
 header {
     height: 15vh;
     /*es para que el nav se mantenga al bajar*/
     /*position: fixed;*/
     z-index: 3;
-    width: 100%;
-    
-    
+    width: 100%;  
 }
- 
+
 .navegacion {
     width: 100%;
     padding: 1%;
     display: flex;
-    justify-content: space-around;
-       
-}  
-
-/* .logo{
-    display: flex;
-    align-self: flex-start; 
-    
-    
-} */
+    justify-content: space-around;    
+}
 .menu{
     list-style: none;
     display: flex;
-    
-    
 }
 .menu>li>a {
     display: block;
@@ -61,44 +43,30 @@ header {
     transition: all .3s;
 }
 
-/* elimina las viñetas o números de los elementos de la lista*/
-
-
-/*para que no salga en columna, lo vuelve fila*/
-/* .menu>li {
-    position: relative;
-    display: inline-block;
-}  */
-
-/* h3{ 
-    font-family: theSans;
-}
-@font-face {
-    font-family: theSans;
-    src: url(Letra//MerriweatherSans-Italic-VariableFont_wght.ttf);
-} */
-.c1, .c2, .c3{
-    border: 1px solid rgb(70, 69, 69);
-    background-color: white;
-    color: black;
-    width: 400px;
-    height: 250px;
-    margin: 17px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-    
-    
-}
-.boton3{
+/*boton contacto*/
+.boton{
     background-color: #019df4;
     color: white;
-    padding: 2%;
-    width: 50%;
-    margin: 2%;
-    
+    padding: 7%;
+    margin: 16%;
 }
+/*Aca termina el menu de navegacion*/
+
+/*SECCION 1*/
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajusta la altura según sea necesario */
+    text-align: center;
+}
+.wsp{
+    align-self: flex-end;
+    margin-right: 15%;
+}
+    
+/*SECCION 2*/
 .cajas{
     display: flex;
     justify-content: center
@@ -108,9 +76,39 @@ header {
     
 }
 
+.c1, .c2, .c3{
+    border: 1px solid rgb(70, 69, 69);
+    background-color: #DB2C75;
+    color: white;
+    width: 400px;
+    height: 250px;
+    margin: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;  
+    border-radius: 1.5%;
+    
+}
 
+.boton3{
+    background-color: #019df4;
+    color: white;
+    padding: 2%;
+    width: 50%;
+    margin: 2%;
+    
+}
+.plan{
+    background-color: #072538;
+    color: white;
+    padding: 15.5%;
+}
+.barrita{
+    display: flex;
+    justify-content: center;
+}
 
-
+/*SECCION 3*/
 
 .c11, .c22, .c33, .c44{
     border: 1px solid rgb(70, 69, 69);
@@ -120,9 +118,29 @@ header {
     height:100px;
     margin: 30px;
     display: flex;
+    border-radius: 3%;
     
 }
 
+/*SECCION 4*/
+.seccion4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ajusta la altura según sea necesario */
+    
+}
+.cajass {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+/* Estilos de las cajas */
+.cajass > div {
+    margin: 1px;  
+   
+}
 .c111, .c222, .c333, .c444, .c555{
     border: 1px solid rgb(70, 69, 69);
     background-color: white;
@@ -131,57 +149,14 @@ header {
     height:50px;
     margin: 30px;
     border-radius: 5%;
-    
-}
-
-
-
-
-.seccion4 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh; /* Ajusta la altura según sea necesario */
-}
-
-
-.cajass {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    
+    
     
 }
 
-  /* Estilos de las cajas */
-  
-.cajass > div {
-    margin: 1px;
-    
-    
-   
-}
-.boton2{
-    background-color: white;
-    color: black;
-    
-}
-*/
-.seccion1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 50vh; /* Ajusta la altura según sea necesario */
-    text-align: center;
-}
-h2, h3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 5vh; /* Ajusta la altura según sea necesario */
-    text-align: center;
-}
+/*FOOTER*/
 footer{
     width: 100%;
     height: 15vh;
@@ -190,5 +165,35 @@ footer{
     align-items: center;
     background-color: black;
     color: white;
-
+    
 } 
+
+h2, h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vh; /* Ajusta la altura según sea necesario */
+    text-align: center;
+    font-family: Raleway;
+}
+p, h4{
+    font-family: Raleway;
+}
+
+.menu>h4{
+    display: block;
+    padding: 15px; 
+
+    font-family: Arial, Helvetica;
+    
+} 
+
+.boton2{
+    background-color: white;
+    color: black;
+    margin-top: 12%;
+}
+
+
+
